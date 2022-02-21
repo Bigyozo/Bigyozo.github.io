@@ -19,6 +19,7 @@ docker run -d --name=wxedge --privileged --net=host --tmpfs /run  --tmpfs /tmp \
 ### elasticsearch
 ```
 echo "http.host: 0.0.0.0" >> /docker_data/elasticsearch/config/elasticsearch.yml
+
 docker run --name es -p 9200:9200 -p 9300:9300  -e "discovery.type=single-node" -e ES_JAVA_OPTS="-Xms512m -Xmx512m" \
 -v /docker_data/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \
 -v elasticsearch_data:/usr/share/elasticsearch/data \
@@ -30,17 +31,24 @@ docker run --name es -p 9200:9200 -p 9300:9300  -e "discovery.type=single-node" 
 ```
 docker run --name mysql-master --privileged=true -v mysql-master-data:/var/lib/mysql -p 3306:3306 \
 -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server
+
 docker run --name mysql-slave --privileged=true -v mysql-slave-data:/var/lib/mysql -p 3307:3306 \
 --link mysql-master:master -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server
+
 echo server-id = 2 >> /etc/my.cnf
 ```
 登录master容器创建用户并授权(mysql8.0不支持同时创建用户并授权),查询bin日志的master_log_file和master_log_pos值,进入slave容器开启主从复制
 ```
 create user 'slave'@'%' identified by '123456';
+
 GRANT REPLICATION SLAVE ON *.* to 'slave'@'%' ;
+
 show master status\G;
+
 change master to master_host='master', master_user='slave', master_password='123456', master_port=3306, \
 master_log_file='binlog.000002', master_log_pos=5884, master_connect_retry=30;
+
 start slave;
+
 show slave status\G;
 ```
