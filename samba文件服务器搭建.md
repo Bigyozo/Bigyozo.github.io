@@ -1,5 +1,6 @@
-# samba文件服务器搭建
-安装及配置 samba 服务
+# samba 文件服务器搭建
+
+树莓派环境安装及配置 samba 服务
 
 ```
 apt install samba samba-common-bin
