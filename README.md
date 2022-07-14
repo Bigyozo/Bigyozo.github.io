@@ -10,3 +10,4 @@
 1. [docker 环境容器部署](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/docker环境容器部署.md)
 2. [redis 集群搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/redis集群搭建.md)
 3. [samba 文件服务器搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/samba文件服务器搭建.md)
+4. [aria2 下载服务器搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/aria2下载服务器搭建.md)
