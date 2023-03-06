@@ -4,7 +4,7 @@
 
 下载 samba 服务并进行配置
 
-```
+```shell
 apt install samba samba-common-bin
 nano /etc/samba/smb.conf
 ```
@@ -23,7 +23,7 @@ nano /etc/samba/smb.conf
 
 设置用户密码及开机自启动
 
-```
+```shell
 smbpasswd -a pi
 systemctl start smbd
 systemctl enable smbd
