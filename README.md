@@ -11,3 +11,4 @@
 2. [redis 集群搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/redis集群搭建.md)
 3. [samba 文件服务器搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/samba文件服务器搭建.md)
 4. [aria2 下载服务器搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/aria2下载服务器搭建.md)
+5. [nginx 安装](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/nginx安装.md)
