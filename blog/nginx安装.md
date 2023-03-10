@@ -31,4 +31,4 @@ make install
 ```
 
 在目录/usr/local/nginx 下安装完成
-![nginx](res/nginx.png)
+![nginx](../res/nginx.png)

@@ -7,7 +7,6 @@
 ```shell
 apt install aria2
 apt install nginx
-
 ```
 
 进入 nginx 项目目录，下载 ariaNg 压缩包并解压
@@ -33,4 +32,4 @@ aria2c --enable-rpc --rpc-listen-all --rpc-secret yourPassword
 
 在 ariaNg 上配置 ip 及刚才输入的密码即可
 
-![ariaNg](res/ariaNg.png)
+![ariaNg](../res/ariaNg.png)

@@ -60,7 +60,7 @@ echo server-id = 2 >> /etc/my.cnf
 
 登录 master 容器创建用户并授权(mysql8.0 不支持同时创建用户并授权),查询 bin 日志的 master_log_file 和 master_log_pos 值,进入 slave 容器开启主从复制
 
-```
+```sql
 create user 'slave'@'%' identified by '123456';
 
 GRANT REPLICATION SLAVE ON *.* to 'slave'@'%' ;
