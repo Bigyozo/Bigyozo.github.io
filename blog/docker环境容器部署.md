@@ -46,6 +46,12 @@ docker run --name es -p 9200:9200 -p 9300:9300  -e "discovery.type=single-node" 
 docker run -p 3000:3000 liyasthomas/postwoman:latest
 ```
 
+### rabbitmq
+
+```shell
+docker run --name myrabbit -p 15672:15672 rabbitmq:management
+```
+
 ### mysql 主从复制
 
 ```shell
@@ -74,3 +80,7 @@ start slave;
 
 show slave status\G;
 ```
+
+### redis 集群
+
+[redis 集群搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/blog/redis集群搭建.md)
