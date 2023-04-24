@@ -11,7 +11,7 @@
 
 ## 前端开发
 
-1. [TypeScript 自定义类型判断](https://git/bloghub.com/Bigyozo/Bigyozo.github.io/blob/main/blog/TypeScript自定义类型判断.md)
+1. [TypeScript 自定义类型判断](https:///github.com/Bigyozo/Bigyozo.github.io/blob/main/blog/TypeScript自定义类型判断.md)
 
 ## 后端开发
 
