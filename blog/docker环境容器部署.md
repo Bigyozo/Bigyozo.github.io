@@ -49,7 +49,7 @@ docker run -p 3000:3000 liyasthomas/postwoman:latest
 ### rabbitmq
 
 ```shell
-docker run --name myrabbit -p 15672:15672 rabbitmq:management
+docker run --name myrabbit -p 5672:5672 15672:15672 rabbitmq:management
 ```
 
 ### mysql 主从复制
