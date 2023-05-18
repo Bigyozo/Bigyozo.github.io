@@ -5,6 +5,7 @@
 - FROM: 初始镜像
 - SHELL: 使用脚本类型，如果不设置会导致之后无法进入容器
 - WORKDIR: 工作目录，会被自动创建
+- ENV: 环境变量
 - COPY: 将当前文件复制进入镜像
 - RUN: 执行命令
 - EXPOSE: 暴露端口号
@@ -13,12 +14,15 @@
 ```dockerFile
 FROM node:lts-alpine
 SHELL ["/bin/sh","-c"]
+ENV API_IP 172.17.0.3
+ENV API_PORT 3000
+ENV PORT 8800
 WORKDIR /app
 COPY ./www /app/www/
 COPY ./server.js /app/
 COPY ./package.json /app/
 RUN npm install
-EXPOSE 8800
+EXPOSE $PORT
 ENTRYPOINT ["node","server.js"]
 ```
 
