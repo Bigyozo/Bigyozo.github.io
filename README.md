@@ -1,5 +1,7 @@
 # Bigyozo's Blog
 
+Language : 简体中文 | [日本語](./README_JP.md)
+
 ## 服务搭建
 
 1. [docker 环境容器部署](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/blog/docker环境容器部署.md)
