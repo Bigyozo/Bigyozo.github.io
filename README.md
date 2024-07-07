@@ -10,6 +10,7 @@ Language : 简体中文 | [日本語](./README_JP.md)
 4. [aria2 下载服务器搭建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/blog/aria2下载服务器搭建.md)
 5. [前端项目打包 docker 镜像](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/blog/前端项目打包docker镜像.md)
 6. [nginx 安装](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/blog/nginx安装.md)
+7. [多架构容器镜像创建](https://github.com/Bigyozo/Bigyozo.github.io/blob/main/blog/多架构容器镜像创建.md)
 
 ## 前端开发
 
