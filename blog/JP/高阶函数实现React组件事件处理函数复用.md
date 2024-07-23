@@ -1,6 +1,6 @@
 # 高階関数による React のイベントメソッドの再利用
 
-高階関数を利用して、editForm 関数だけで複数のプロパティの値設定を実現
+高階関数を利用して、一つの editForm 関数だけで複数のプロパティの値設定を実現
 
 ```jsx
 class Login extends React.Component {
