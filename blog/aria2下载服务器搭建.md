@@ -27,7 +27,7 @@ systemctl enable nginx
 启动 aria2 后端服务并设置密码
 
 ```shell
-aria2c --enable-rpc --rpc-listen-all --rpc-secret yourPassword
+nohup aria2c --enable-rpc --rpc-listen-all --rpc-secret password &
 ```
 
 在 ariaNg 上配置 ip 及刚才输入的密码即可
